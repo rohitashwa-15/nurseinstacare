@@ -1,0 +1,9 @@
+export 'notifications/notifications.dart';
+export 'settings/settings.dart';
+export 'help/help.dart';
+export 'faqs/faqs.dart';
+export 'week_schedule/week_schedule.dart';
+export 'preferences/preferences.dart';
+export 'patients/patients.dart';
+export 'login/login.dart';
+export 'forgot_password/forgot_password.dart';

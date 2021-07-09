@@ -1,0 +1,15 @@
+import 'package:get/get.dart';
+
+import '../../app.dart';
+
+/// A list of bindings which will be used in the route of [SplashView].
+class SettingsBinding extends Bindings {
+  @override
+  void dependencies() {
+    Get.lazyPut<SettingsController>(
+      () => SettingsController(
+   
+      ),
+    );
+  }
+}
