@@ -7,3 +7,5 @@ export 'preferences/preferences.dart';
 export 'patients/patients.dart';
 export 'login/login.dart';
 export 'forgot_password/forgot_password.dart';
+export 'edit_phone_no/edit_phone_no.dart';
+export 'enter_verification/enter_verification.dart';

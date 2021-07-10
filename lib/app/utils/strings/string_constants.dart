@@ -41,4 +41,10 @@ abstract class StringConstants {
   static String selectPreferredZones = 'selectPreferredZones'.tr;
   static String search = 'search'.tr;
   static String patientTypes = 'patientTypes'.tr;
+  static String editPhoneNo = 'editPhoneNo'.tr;
+  static String phoneNo = 'phoneNo'.tr;
+  static String verify = 'verify'.tr;
+  static String enter = 'enter'.tr;
+  static String enterVerificationCode = 'editVerificationCode'.tr;
+  static String verificationCodeSendto = 'verificationCodeSendto'.tr;
 }

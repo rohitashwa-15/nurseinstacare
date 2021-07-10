@@ -22,6 +22,20 @@ abstract class RouteManagement {
     );
   }
 
+    /// Go to the edit phone number screen.
+  static void goToEditPhoneNo() {
+    Get.offNamed<void>(
+      Routes.editPhoneScreen,
+    );
+  }
+
+    /// Go to the enter verification number screen.
+  static void goToEnterVerification() {
+    Get.offNamed<void>(
+      Routes.enterVerificationScreen,
+    );
+  }
+
 
   /// Go to the settings screen.
   static void goToSettings() {

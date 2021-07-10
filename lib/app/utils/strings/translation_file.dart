@@ -19,7 +19,8 @@ class TranslationsFile extends Translations {
           'amsterdam': 'Amsterdam',
           'enterDetails': 'Enter Details',
           'phone': ' Phone ',
-          'resetLink' : 'Please enter registered email to get password \nReset link.',
+          'resetLink':
+              'Please enter registered email to get password \nReset link.',
           'morning': 'Morning',
           'afternoon': 'Afternoon',
           'evening': 'Evening',
@@ -43,8 +44,14 @@ class TranslationsFile extends Translations {
           'forgotPassword': 'Forgot password ?',
           'entermailId': 'Enter Email ID ',
           'login': 'LOGIN',
-          'orContinueWith' :'or Continue With',
-          'resetPassword' : 'RESET PASSWORD',
+          'orContinueWith': 'or Continue With',
+          'resetPassword': 'RESET PASSWORD',
+          'editPhoneNo': 'EDIT PHONE NUMBER',
+          'phoneNo': 'Phone Number',
+          'verify': 'VERIFY',
+          'enter' : 'Enter',
+          'enterVerificationCode' :'Enter Verification \nCode',
+          'verificationCodeSendto' : 'Verification code has been send to',
         },
       };
 }

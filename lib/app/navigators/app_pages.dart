@@ -14,14 +14,14 @@ part 'app_routes.dart';
 
 // coverage:ignore-file
 class AppPages {
-  static const initial = Routes.loginScreen;
+  static const initial = Routes.editPhoneScreen;
   static var transitionDuration = const Duration(
     milliseconds: 550,
   );
   static final pages = [
     GetPage<LoginView>(
       name: _Paths.loginScreen,
-      page: () =>  LoginView(),
+      page: () =>  const LoginView(),
       transitionDuration: transitionDuration,
       binding: LoginBinding(),
       transition: Transition.native,
@@ -31,6 +31,20 @@ class AppPages {
       page: () => const ForgotPasswordView(),
       transitionDuration: transitionDuration,
       binding: ForgotPasswordBinding(),
+      transition: Transition.fadeIn,
+    ),
+       GetPage<EditPhoneNoView>(
+      name: _Paths.editPhoneScreen,
+      page: () =>  EditPhoneNoView(),
+      transitionDuration: transitionDuration,
+      binding: EditPhoneNoBinding(),
+      transition: Transition.fadeIn,
+    ),
+       GetPage<EnterVerificationView>(
+      name: _Paths.enterVerificationScreen,
+      page: () =>  const EnterVerificationView(),
+      transitionDuration: transitionDuration,
+      binding: EnterVerificationBinding(),
       transition: Transition.fadeIn,
     ),
     GetPage<SettingsView>(

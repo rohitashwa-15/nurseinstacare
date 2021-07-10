@@ -24,7 +24,7 @@ void main() {
       ),
     );
 
-/// Checking [LoginView] is there using Key
+/// Checking [ForgotPasswordView] is there using Key
     final forgotPasswordViewFinder = find.byKey(const Key('forgot-password-view'));
     expect(forgotPasswordViewFinder, findsOneWidget);
 

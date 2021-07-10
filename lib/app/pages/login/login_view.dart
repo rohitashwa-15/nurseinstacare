@@ -20,7 +20,7 @@ class LoginView extends StatelessWidget {
             Center(
               child: SizedBox(
               width: Dimens.hundred,
-              height: Dimens.hundred,,
+              height: Dimens.hundred,
               child: Image.asset('assets/instaCareLogo.svg')),
             ),
             Dimens.boxHeight30,
