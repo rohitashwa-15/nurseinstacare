@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:get/get.dart';
 import 'package:nurseinstacare/app/widgets/box_widget.dart';
 
 import '../../app.dart';
@@ -67,9 +68,11 @@ class EnterVerificationView extends StatelessWidget {
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
               ),),
-              ButtonWidget(
-                title: StringConstants.verify,
-                onTap: RouteManagement.goToEnterVerification,
+            GetBuilder<EnterVerificationController>(
+                builder: (controller) =>  ButtonWidget(
+                  title: StringConstants.verify,
+                  onTap:  controller.enableButton() ? controller.submitVerificationDetails : null,
+                ),
               )
             ],
           ),

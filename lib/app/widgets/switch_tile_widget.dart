@@ -38,9 +38,7 @@ class _SwitchTileWidgetState extends State<SwitchTileWidget> {
                       fontSize: 17),
                 ),
               ),
-           Image.asset( 
-             ''
-             ),
+          
            Padding(
              padding: const EdgeInsets.all(8.0),
              child: FlutterSwitch(

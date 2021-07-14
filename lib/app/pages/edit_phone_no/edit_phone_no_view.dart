@@ -58,52 +58,15 @@ class EditPhoneNoView extends StatelessWidget {
                 ),
               ),
             ),
-            /*Expanded(
-              child: Stack(
-                children: [
-                  GetBuilder<EditPhoneNoController>(
-                    builder: (controller) => FormFieldWidget(
-                      isObscureText: false,
-                      obscureCharacter: ' ',
-                      isFilled: false,
-                      contentPadding: Dimens.getEdgeInsets(50, 8, 10, 0),
-                      hintText:
-                          StringConstants.enter + ' ' + StringConstants.phoneNo,
-                      formBorder: const OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.grey)),
-                      errorText: '',
-                      textInputAction: TextInputAction.next,
-                      textInputType: TextInputType.phone,
-                      //onChange: controller.checkIfIdIsValid,
-                    ),
-                  ),
-                  Positioned(
-                    left: 10,
-                    top: 5,
-                    child: Container(
-                      height: Dimens.fourty,
-                      width: Dimens.fifty,
-                      color: Colors.white,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text('+10'),
-                          Icon(Icons.arrow_drop_down),
-                        ],
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),*/
             Expanded(child: Dimens.boxHeight10),
             const Divider(
               thickness: 1,
             ),
-            ButtonWidget(
-              title: StringConstants.verify,
-              onTap: RouteManagement.goToEnterVerification,
+           GetBuilder<EditPhoneNoController>(
+                builder: (controller) => ButtonWidget(
+                title: StringConstants.verify,
+                onTap: controller.enableButton() ? controller.submitPhNoDetails : null,
+              ),
             )
           ],
         ),

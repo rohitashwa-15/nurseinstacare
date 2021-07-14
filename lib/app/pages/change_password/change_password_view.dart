@@ -14,6 +14,7 @@ class ChangePasswordView extends StatelessWidget {
         body: Padding(
           padding: Dimens.edgeInsets15_0_15_0,
           child: Column(
+            key: const Key('change-password-view'),
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -38,23 +39,23 @@ class ChangePasswordView extends StatelessWidget {
                   ),
                   contentPadding: Dimens.edgeInsets16,
                   hintText: StringConstants.password,
-                  //  isObscureText: controller.isPasswordVisible ? false : true,
+                  isObscureText: controller.isPasswordVisible ? false : true,
                   errorText: '',
                   textInputAction: TextInputAction.next,
                   textInputType: TextInputType.text,
-                  // onChange: controller.checkIfPasswordIsValid,
-                  // suffixIcon: IconButton(
-                  // onPressed: controller.updatePasswordVisibility,
-                  // icon: controller.isPasswordVisible
-                  //  ? const Icon(
-                  //     Icons.visibility,
-                  //       color: ColorsValue.greyColor,
-                  //     )
-                  //  : const Icon(
-                  //     Icons.visibility_off,
-                  //        color: ColorsValue.greyColor,
-                  //),
-                  //  ),
+                   onChange: controller.checkIfPasswordIsValid,
+                   suffixIcon: IconButton(
+                   onPressed: controller.updatePasswordVisibility,
+                   icon: controller.isPasswordVisible
+                 ? const Icon(
+                     Icons.visibility,
+                       color: ColorsValue.greyColor,
+                       )
+                    : const Icon(
+                     Icons.visibility_off,
+                         color: ColorsValue.greyColor,
+                 ),
+                   ),
                 ),
               ),
               Padding(
@@ -76,23 +77,23 @@ class ChangePasswordView extends StatelessWidget {
                       borderSide: BorderSide(color: Colors.grey)),
                   contentPadding: Dimens.edgeInsets16,
                   hintText: StringConstants.password,
-                  // isObscureText: controller.isPasswordVisible ? false : true,
+                  isObscureText: controller.isPasswordVisible ? false : true,
                   errorText: '',
                   textInputAction: TextInputAction.next,
                   textInputType: TextInputType.text,
-                  // onChange: controller.checkIfPasswordIsValid,
-                  // suffixIcon: IconButton(
-                  //  onPressed: controller.updatePasswordVisibility,
-                  //icon: controller.isPasswordVisible
-                  //    ? const Icon(
-                  //      Icons.visibility,
-                  //     color: ColorsValue.greyColor,
-                  //    )
-                  ///  : const Icon(
-                  //    Icons.visibility_off,
-                  //  color: ColorsValue.greyColor,
-                  //),
-                  //  ),
+                   onChange: controller.checkIfPasswordIsValid,
+                  suffixIcon: IconButton(
+                    onPressed: controller.updatePasswordVisibility,
+                 icon: controller.isPasswordVisible
+                    ? const Icon(
+                       Icons.visibility,
+                     color: ColorsValue.greyColor,
+                    )
+                   : const Icon(
+                     Icons.visibility_off,
+                    color: ColorsValue.greyColor,
+                  ),
+                    ),
                 ),
               ),
               Padding(
@@ -114,27 +115,30 @@ class ChangePasswordView extends StatelessWidget {
                       borderSide: BorderSide(color: Colors.grey)),
                   contentPadding: Dimens.edgeInsets16,
                   hintText: StringConstants.password,
-                  //isObscureText: controller.isPasswordVisible ? false : true,
+                  isObscureText: controller.isPasswordVisible ? false : true,
                   errorText: '',
                   textInputAction: TextInputAction.next,
                   textInputType: TextInputType.text,
-                  // onChange: controller.checkIfPasswordIsValid,
-                  //  suffixIcon: IconButton(
-                  //  onPressed: controller.updatePasswordVisibility,
-                  // icon: controller.isPasswordVisible
-                  //     ? const Icon(
-                  //    Icons.visibility,
-                  //      color: ColorsValue.greyColor,
-                  //     )
-                  //    : const Icon(
-                  //        Icons.visibility_off,
-                  //  color: ColorsValue.greyColor,
-                  //  ),
-                  // ),
+                  onChange: controller.checkIfPasswordIsValid,
+                  suffixIcon: IconButton(
+                    onPressed: controller.updatePasswordVisibility,
+                  icon: controller.isPasswordVisible
+                       ? const Icon(
+                     Icons.visibility,
+                        color: ColorsValue.greyColor,
+                      )
+                      : const Icon(
+                         Icons.visibility_off,
+                   color: ColorsValue.greyColor,
+                    ),
+                   ),
                 ),
               ),
-              ButtonWidget(
-                title: StringConstants.confirm,
+              GetBuilder<ChangePasswordController>(
+                builder: (controller) => ButtonWidget(
+                  title: StringConstants.confirm,
+                  onTap:  controller.enableButton() ? controller.submitChangePasswordDetails : null,
+                ),
               ),
             ],
           ),

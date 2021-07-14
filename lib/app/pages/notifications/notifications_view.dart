@@ -10,10 +10,12 @@ class NotificationsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) => GetBuilder<NotificationsController>(
         builder: (_controller) => Scaffold(
+          
           backgroundColor: ColorsValue.primaryColorRgb,
           appBar: CustomAppBar(title: StringConstants.notifications,),
           body: SizedBox(
             child: ListView(
+              key: const Key('notifications-view'),
               children: [
                 SwitchTileWidget(
                   title: StringConstants.playSoundForNotifications,

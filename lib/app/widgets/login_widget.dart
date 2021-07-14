@@ -74,8 +74,8 @@ class LoginWidget extends StatelessWidget {
               ),
               GetBuilder<LoginController>(
                 builder: (controller) => GestureDetector(
-                  onTap: () {},
-                  //controller.enableButton() ? controller.submitLogin : null,
+                  onTap: 
+                  controller.enableButton() ? controller.submitLogin : null,
                   child: Container(
                     width: Dimens.percentWidth(1),
                     height: Dimens.fifty,

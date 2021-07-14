@@ -14,7 +14,7 @@ part 'app_routes.dart';
 
 // coverage:ignore-file
 class AppPages {
-  static const initial = Routes.chatScreen;
+  static const initial = Routes.notificationsScreen;
   static var transitionDuration = const Duration(
     milliseconds: 550,
   );
