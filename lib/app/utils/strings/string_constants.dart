@@ -12,6 +12,7 @@ abstract class StringConstants {
   static String phone = 'phone';
   static String login = 'login'.tr;
   static String password = 'password'.tr;
+  static String notifications = 'notifications'.tr;
   static String orContinueWith = 'orContinueWith'.tr;
   static String forgotPassword = 'forgotPassword'.tr;
   static String resetPassword = 'resetPassword'.tr;
@@ -47,4 +48,21 @@ abstract class StringConstants {
   static String enter = 'enter'.tr;
   static String enterVerificationCode = 'editVerificationCode'.tr;
   static String verificationCodeSendto = 'verificationCodeSendto'.tr;
+  static String playSoundForNotifications = 'playSoundForNotifications'.tr;
+  static String playSoundForAlerts = 'playSoundForAlerts'.tr;
+  static String playSoundForMessages = 'playSoundForMessages'.tr;
+  static String appoinments = 'appoinments'.tr;
+  static String patients = 'patients'.tr;
+  static String chat = 'chat'.tr;
+  static String profile = 'profile'.tr;
+  static String information = 'information'.tr;
+  static String my = 'my'.tr;
+  static String settings = 'settings'.tr;
+  static String availability = 'availability'.tr;
+  static String changePassword = 'changePassword'.tr;
+  static String oldPassword = 'oldPassword'.tr;
+  static String newPassword = 'newPassword'.tr;
+  static String confirmPassword = 'confirmPassword'.tr;
+  static String confirm = 'confirm'.tr;
+  static String chats = 'chats'.tr;
 }

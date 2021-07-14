@@ -22,6 +22,20 @@ abstract class RouteManagement {
     );
   }
 
+  /// Go to the change password screen.
+  static void goToChangePasswprd() {
+    Get.offNamed<void>(
+      Routes.changePasswordScreen,
+    );
+  }
+
+  /// Go to the profile screen.
+  static void goToProfile() {
+    Get.offNamed<void>(
+      Routes.profileScreen,
+    );
+  }
+
     /// Go to the edit phone number screen.
   static void goToEditPhoneNo() {
     Get.offNamed<void>(

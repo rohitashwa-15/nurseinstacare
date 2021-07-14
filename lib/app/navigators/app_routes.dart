@@ -17,6 +17,9 @@ abstract class Routes {
   static const patientsScreen = _Paths.patientsScreen;
   static const editPhoneScreen = _Paths.editPhoneScreen;
   static const enterVerificationScreen = _Paths.enterVerificationScreen;
+  static const profileScreen = _Paths.profileScreen;
+  static const changePasswordScreen = _Paths.changePasswordScreen;
+  static const chatScreen = _Paths.chatScreen;
 }
 
 abstract class _Paths {
@@ -31,4 +34,7 @@ abstract class _Paths {
   static const patientsScreen = '/patients-screen';
   static const editPhoneScreen = '/editPhone-screen';
   static const enterVerificationScreen = '/enterVerification-screen';
+  static const profileScreen = '/profile-screen';
+  static const changePasswordScreen = '/change-password-screen';
+  static const chatScreen = '/chat-screen';
 }

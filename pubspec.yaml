@@ -45,6 +45,7 @@ dependencies:
   material_floating_search_bar: ^0.3.4
 
 
+
 dev_dependencies:
   
 
@@ -70,6 +71,7 @@ flutter:
   assets:
     - googleLogo.png
     - assets/icon/
+    - assets/personal_details/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

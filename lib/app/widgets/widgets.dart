@@ -7,3 +7,4 @@ export 'login_widget.dart';
 export 'custom_appbar.dart';
 export 'button_widget.dart';
 export 'box_widget.dart';
+export 'chat_screen_widget.dart';

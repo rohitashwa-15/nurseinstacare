@@ -77,32 +77,31 @@ class FormFieldWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Material(
-      child: TextFormField(
-        readOnly: isReadOnly,
-        autofocus: autoFocus,
-        focusNode: focusNode,
-        controller: textEditingController,
-        obscureText: isObscureText,
-        obscuringCharacter: obscureCharacter,
-        textCapitalization: textCapitalization,
-        onTap: onTap,
-        decoration: InputDecoration(
-          filled: isFilled,
-          contentPadding: contentPadding,
-          fillColor: fillColor,
-          border: formBorder,
-          hintText: hintText,
-          hintStyle: hintStyle,
-          errorText: errorText,
-          errorStyle: errorStyle,
-          suffixIcon: suffixIcon,
-          prefixIcon: prefixIcon,
+        child: TextFormField(
+          readOnly: isReadOnly,
+          autofocus: autoFocus,
+          focusNode: focusNode,
+          controller: textEditingController,
+          obscureText: isObscureText,
+          obscuringCharacter: obscureCharacter,
+          textCapitalization: textCapitalization,
+          onTap: onTap,
+          decoration: InputDecoration(
+            filled: isFilled,
+            contentPadding: contentPadding,
+            fillColor: fillColor,
+            border: formBorder,
+            hintText: hintText,
+            hintStyle: hintStyle,
+            errorText: errorText,
+            errorStyle: errorStyle,
+            suffixIcon: suffixIcon,
+            prefixIcon: prefixIcon,
+          ),
+          onChanged: onChange,
+          textInputAction: textInputAction,
+          keyboardType: textInputType,
+          style: formStyle,
         ),
-        onChanged: onChange,
-        textInputAction: textInputAction,
-        keyboardType: textInputType,
-        style: formStyle,
-      ),
-  );
-
+      );
 }

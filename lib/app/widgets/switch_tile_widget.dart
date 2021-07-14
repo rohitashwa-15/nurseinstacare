@@ -4,9 +4,10 @@ import 'package:flutter_switch/flutter_switch.dart';
 import '../app.dart';
 
 class SwitchTileWidget extends StatefulWidget {
-  const SwitchTileWidget({
-    required this.title,
-  });
+    const SwitchTileWidget({
+    required this.title, Key? key
+  }): super(key: key);
+
 
   final String title;
 
@@ -37,6 +38,9 @@ class _SwitchTileWidgetState extends State<SwitchTileWidget> {
                       fontSize: 17),
                 ),
               ),
+           Image.asset( 
+             ''
+             ),
            Padding(
              padding: const EdgeInsets.all(8.0),
              child: FlutterSwitch(
@@ -56,6 +60,7 @@ class _SwitchTileWidgetState extends State<SwitchTileWidget> {
            ),
             ],
           ),
-        ));
+        ),
+        );
   }
 }

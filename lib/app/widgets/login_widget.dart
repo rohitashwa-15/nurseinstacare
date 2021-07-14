@@ -40,7 +40,6 @@ class LoginWidget extends StatelessWidget {
                   formBorder: const OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.grey)),
                   contentPadding: Dimens.edgeInsets16,
-                  // fillColor: ColorsValue.primaryColorRgb,
                   hintText: StringConstants.password,
                   isObscureText: controller.isPasswordVisible ? false : true,
                   errorText: '',

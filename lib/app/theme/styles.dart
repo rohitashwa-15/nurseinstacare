@@ -9,21 +9,6 @@ import '../app.dart';
 // coverage:ignore-file
 abstract class Styles {
 
- static ThemeData lightTheme = ThemeData(
-    brightness: Brightness.light,
-    accentColorBrightness: Brightness.dark,
-    backgroundColor: Colors.white,
-    fontFamily: GoogleFonts.openSans().fontFamily,
-    primaryColor: ColorsValue.primaryColor,
-    primarySwatch: const MaterialColor(
-      ColorsValue.primaryColorHex,
-      ColorsValue.primaryColorSwatch,
-    ),
-    //accentColor: ColorsValue.accountColor,
-    visualDensity: VisualDensity.adaptivePlatformDensity,
-    elevatedButtonTheme: elevatedButtonStyle,
-    textButtonTheme: textButtonStyle,
-  );
 
   static ElevatedButtonThemeData elevatedButtonStyle = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
@@ -48,6 +33,8 @@ abstract class Styles {
       ),
     ),
   );
+
+
 
   static TextStyle boldWhite23 = GoogleFonts.openSans(
     fontWeight: FontWeight.bold,
@@ -290,4 +277,15 @@ abstract class Styles {
     fontSize: Dimens.ten + Dimens.five,
     fontWeight: FontWeight.bold,
   );
+
+   static TextStyle grey10 = GoogleFonts.openSans(
+    color: Colors.grey,
+    fontSize: Dimens.ten,
+  );
+  static TextStyle black15 = TextStyle(
+    fontWeight: FontWeight.w500,
+    fontSize: Dimens.fifteen,
+    color: Colors.black,
+  );
+
 }

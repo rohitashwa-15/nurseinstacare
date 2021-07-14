@@ -14,7 +14,7 @@ part 'app_routes.dart';
 
 // coverage:ignore-file
 class AppPages {
-  static const initial = Routes.editPhoneScreen;
+  static const initial = Routes.chatScreen;
   static var transitionDuration = const Duration(
     milliseconds: 550,
   );
@@ -33,7 +33,28 @@ class AppPages {
       binding: ForgotPasswordBinding(),
       transition: Transition.fadeIn,
     ),
-       GetPage<EditPhoneNoView>(
+      GetPage<ChangePasswordView>(
+      name: _Paths.changePasswordScreen,
+      transitionDuration: transitionDuration,
+      page: () => const ChangePasswordView(),
+      binding: ChangePasswordBinding(),
+      transition: Transition.fadeIn,
+    ),
+       GetPage<ProfileView>(
+      name: _Paths.profileScreen,
+      transitionDuration: transitionDuration,
+      page: () => const ProfileView(),
+      binding: ProfileBinding(),
+      transition: Transition.fadeIn,
+    ),
+     GetPage<ChatsView>(
+      name: _Paths.chatScreen,
+      page: () =>  const ChatsView(),
+      transitionDuration: transitionDuration,
+      binding: ChatsBinding(),
+      transition: Transition.native,
+    ),
+      GetPage<EditPhoneNoView>(
       name: _Paths.editPhoneScreen,
       page: () =>  EditPhoneNoView(),
       transitionDuration: transitionDuration,
@@ -57,7 +78,7 @@ class AppPages {
     GetPage<NotificationsView>(
       name: _Paths.notificationsScreen,
       transitionDuration: transitionDuration,
-      page: () => NotificationsView(),
+      page: () => const NotificationsView(),
       binding: NotificationsBinding(),
       transition: Transition.fadeIn,
     ),
@@ -68,13 +89,13 @@ class AppPages {
       binding: HelpBinding(),
       transition: Transition.fadeIn,
     ),
-    GetPage<FaqsView>(
+   /* GetPage<FaqsView>(
       name: _Paths.faqsScreen,
       transitionDuration: transitionDuration,
       page: () => FaqsView(),
       binding: FaqsBinding(),
       transition: Transition.fadeIn,
-    ),
+    ),*/
     GetPage<WeekScheduleView>(
       name: _Paths.weekScheduleScreen,
       transitionDuration: transitionDuration,

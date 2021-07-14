@@ -9,3 +9,6 @@ export 'login/login.dart';
 export 'forgot_password/forgot_password.dart';
 export 'edit_phone_no/edit_phone_no.dart';
 export 'enter_verification/enter_verification.dart';
+export 'profile/profile.dart';
+export 'change_password/change_password.dart';
+export 'chat_screen/chat_screen.dart';
