@@ -1,8 +1,8 @@
-
 import 'package:get/get.dart';
-
 import '../../app.dart';
 
+
+/// A controller for the [ChangePasswordView], to update the UI
 class ChangePasswordController extends GetxController{
 
 

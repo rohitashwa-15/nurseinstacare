@@ -70,6 +70,7 @@ class TranslationsFile extends Translations {
           'confirmPassword' : 'Confirm Password',
           'confirm' : 'CONFIRM',
           'chats' : 'CHATS',
+          'save':'SAVE',
         },
       };
 }

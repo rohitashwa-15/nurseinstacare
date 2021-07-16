@@ -4,6 +4,7 @@ import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 
 import '../../app.dart';
 
+/// A Edit Phone Screen to feed in phone number.
 class EditPhoneNoView extends StatelessWidget {
   EditPhoneNoView({Key? key}) : super(key: key);
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();

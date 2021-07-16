@@ -1,7 +1,5 @@
 import 'package:get/get.dart';
-
 import '../app.dart';
-
 part 'app_routes.dart';
 
 /// Contains the list of pages or routes taken across the whole application.
@@ -14,7 +12,7 @@ part 'app_routes.dart';
 
 // coverage:ignore-file
 class AppPages {
-  static const initial = Routes.notificationsScreen;
+  static const initial = Routes.preferenceScreen;
   static var transitionDuration = const Duration(
     milliseconds: 550,
   );

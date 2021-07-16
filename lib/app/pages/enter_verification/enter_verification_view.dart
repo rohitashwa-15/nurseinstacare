@@ -1,11 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:get/get.dart';
-import 'package:nurseinstacare/app/widgets/box_widget.dart';
-
 import '../../app.dart';
 
+/// A Verification screen to enter nd verify phone no.
 class EnterVerificationView extends StatelessWidget {
   const EnterVerificationView({Key? key}) : super(key: key);
 

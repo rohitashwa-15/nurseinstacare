@@ -1,10 +1,8 @@
 import 'package:feature_discovery/feature_discovery.dart';
 import 'package:flutter/material.dart';
 import 'package:nurseinstacare/app/app.dart';
-import 'package:nurseinstacare/app/theme/colorsvalue.dart';
-import 'package:nurseinstacare/app/widgets/custom_navigation_bar.dart';
-import 'package:nurseinstacare/app/widgets/list_tile_widget.dart';
 
+/// A PROFILE screen to view and edit user details.
 class ProfileView extends StatelessWidget {
   const ProfileView({Key? key}) : super(key: key);
 

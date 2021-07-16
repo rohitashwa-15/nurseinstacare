@@ -9,10 +9,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) => AppBar(
         leading: IconButton(
-          icon: const Icon(
-            Icons.arrow_left,
-            size: 70,
-          ),
+          icon: Image.asset(IconConstants.backIcon),
           color: Colors.black,
           onPressed: Get.back,
         ),

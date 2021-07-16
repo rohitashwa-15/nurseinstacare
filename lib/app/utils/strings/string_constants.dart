@@ -65,4 +65,5 @@ abstract class StringConstants {
   static String confirmPassword = 'confirmPassword'.tr;
   static String confirm = 'confirm'.tr;
   static String chats = 'chats'.tr;
+  static String save = 'save'.tr;
 }

@@ -200,9 +200,15 @@ abstract class Styles {
     fontWeight: FontWeight.bold,
   );
 
+    static TextStyle blackBold40= GoogleFonts.openSans(
+    color: Colors.black,
+    fontSize: Dimens.fourty,
+    fontWeight: FontWeight.bold,
+  );
+
   static TextStyle blackBold19 = GoogleFonts.openSans(
     color: Colors.black,
-    fontSize: Dimens.ten + Dimens.six,
+    fontSize: Dimens.ten + Dimens.nineteen,
     fontWeight: FontWeight.bold,
   );
 

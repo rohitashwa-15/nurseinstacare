@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 
 import '../../app.dart';
 
+
+/// A Forgot PAssword screen to attain password using email ID .
 class ForgotPasswordView extends StatelessWidget {
   const ForgotPasswordView({Key? key}) : super(key: key);
 

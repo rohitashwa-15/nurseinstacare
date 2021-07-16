@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-
 import '../../app.dart';
 
+/// A controller for the [EnterVerificationView], to update the UI
 class EnterVerificationController extends GetxController {
   bool num = false;
 

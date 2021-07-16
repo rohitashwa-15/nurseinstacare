@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-
 import 'app_pages.dart';
 
 /// A chunk of routes taken in the application.

@@ -1,8 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
-import 'package:nurseinstacare/app/utils/strings/string_constants.dart';
-
 import '../app.dart';
 
 class Lw extends StatefulWidget {
@@ -20,7 +16,7 @@ class _LwState extends State<Lw> {
     return Container(
       width: Dimens.percentWidth(1),
       height: Dimens.percentHeight(1),
-      color: Colors.white,
+      color: Colors.white70,
       child: ListView.builder(
         key: const Key('list-widget'),
         primary: false,
@@ -31,10 +27,10 @@ class _LwState extends State<Lw> {
           return Column(
             children: [
               Padding(
-                padding: Dimens.edgeInsets10_5_10_5,
+                padding: Dimens.edgeInsets10_0_10_0,
                 child: SizedBox(
                   width: Dimens.percentWidth(Dimens.one),
-                  height: Dimens.fifty,
+                  height: Dimens.thirtyNine,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -62,8 +58,8 @@ class _LwState extends State<Lw> {
                               });
                             },
                             child: Container(
-                              width: Dimens.thirty,
-                              height: Dimens.thirty,
+                              width: Dimens.fourty,
+                              height: Dimens.fourty,
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
                                 border:
@@ -73,7 +69,7 @@ class _LwState extends State<Lw> {
                               child: _value
                                   ? Icon(
                                       Icons.check,
-                                      size: Dimens.twenty,
+                                      size: Dimens.fifteen,
                                       color: Colors.white,
                                     )
                                   : Icon(

@@ -1,11 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nurseinstacare/app/app.dart';
-import 'package:nurseinstacare/app/theme/dimens.dart';
-import 'package:nurseinstacare/app/theme/theme.dart';
 
+/// A login screen to authenticate the user.
 class LoginView extends StatelessWidget {
-  const LoginView({Key? key});
+  const LoginView({Key? key}): super(key: key);
   @override
   Key get key => const Key('login-view');
   @override
@@ -15,7 +14,6 @@ class LoginView extends StatelessWidget {
           padding: Dimens.edgeInsets15_10_15_10,
           child: ListView(shrinkWrap: true, children: [
             Dimens.boxHeight70,
-            //Dimens.boxHeight70,
             Center(
               child: SizedBox(
                   width: Dimens.hundred,

@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:nurseinstacare/app/theme/theme.dart';
-import 'package:nurseinstacare/app/widgets/blue_dot_widget.dart';
-import 'package:nurseinstacare/app/widgets/list_tiles.dart';
 import '../../app.dart';
 
+/// A Preferences screen to choose preferences.
 class PreferencesView extends StatefulWidget {
   const PreferencesView({Key? key}) : super(key: key);
 
@@ -18,27 +16,12 @@ class _PreferencesViewState extends State<PreferencesView> {
   @override
   Widget build(BuildContext context) => GetBuilder<PreferencesController>(
         builder: (_controller) => Scaffold(
-          backgroundColor: ColorsValue.primaryColorRgb,
           resizeToAvoidBottomInset: false,
-          appBar: PreferredSize(
-            preferredSize: Size.fromHeight(Dimens.eighty),
-            child: AppBar(
-              centerTitle: true,
-              title: Column(
-                children: [
-                  Dimens.boxHeight40,
-                  Text(
-                    StringConstants.preferences,
-                    style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: ColorsValue.blackColor),
-                  ),
-                ],
-              ),
-              backgroundColor: ColorsValue.primaryColorRgb,
-            ),
+          appBar: CustomAppBar(
+            title: StringConstants.preferences,
           ),
           body: ListView(
+            key:const Key('preferences-view'),
             children: [
               Container(
                 color: ColorsValue.primaryColorRgb,
@@ -90,7 +73,7 @@ class _PreferencesViewState extends State<PreferencesView> {
                 height: Dimens.eight,
               ),
               Padding(
-                padding: Dimens.edgeInsets20,
+                padding: Dimens.edgeInsets18_10_18_10,
                 child: Text(
                   StringConstants.selectPreferredZones,
                   style: TextStyle(
@@ -108,6 +91,7 @@ class _PreferencesViewState extends State<PreferencesView> {
                     border: Border.all(
                       color: ColorsValue.greyColor,
                     ),
+                    borderRadius: BorderRadius.all(Radius.circular(Dimens.six)),
                     color: Colors.white,
                   ),
                   width: Dimens.percentWidth(Dimens.one),
@@ -118,11 +102,20 @@ class _PreferencesViewState extends State<PreferencesView> {
                         decoration: InputDecoration(
                       border: InputBorder.none,
                       hintText: StringConstants.search,
-                    )),
+                    ),
+                    ),
                   ),
                 ),
               ),
-              const Lw(itm: 6),
+              const Lw(itm: 10),
+              Container(
+                color: Colors.white,
+                child: Center(
+                    child: Padding(
+                  padding: Dimens.edgeInsets15,
+                  child: ButtonWidget( title: StringConstants.save),
+                )),
+              ),
             ],
           ),
         ),

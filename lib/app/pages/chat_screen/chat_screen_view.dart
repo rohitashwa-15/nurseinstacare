@@ -1,18 +1,15 @@
 import 'package:feature_discovery/feature_discovery.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:nurseinstacare/app/widgets/custom_navigation_bar.dart';
-
 import '../../app.dart';
 
 class ChatsView extends StatelessWidget {
   const ChatsView({Key? key}) : super(key: key);
 
-
   @override
   Widget build(BuildContext context) => FeatureDiscovery(
-      recordStepsInSharedPreferences: false,
-    child: Scaffold(
+        recordStepsInSharedPreferences: false,
+        child: Scaffold(
           backgroundColor: ColorsValue.primaryColorRgb,
           appBar: PreferredSize(
             preferredSize: Size.fromHeight(Dimens.hundred + Dimens.twenty),
@@ -22,7 +19,7 @@ class ChatsView extends StatelessWidget {
                 padding: Dimens.edgeInsets15_0_15_0,
                 child: Column(
                   children: [
-                    Dimens.boxHeight30,
+                    Dimens.boxHeight10,
                     Padding(
                       padding: Dimens.edgeInsets10,
                       child: Text(
@@ -41,7 +38,8 @@ class ChatsView extends StatelessWidget {
                           isObscureText: false,
                           obscureCharacter: ' ',
                           isFilled: true,
-                          contentPadding: Dimens.getEdgeInsets(Dimens.fifteen, Dimens.five, Dimens.ten, Dimens.ten),
+                          contentPadding: Dimens.getEdgeInsets(Dimens.fifteen,
+                              Dimens.five, Dimens.ten, Dimens.ten),
                           hintText: StringConstants.search,
                           formBorder: const OutlineInputBorder(
                               borderSide: BorderSide(color: Colors.grey)),
@@ -72,5 +70,5 @@ class ChatsView extends StatelessWidget {
           body: const ChatScreenWidget(),
           bottomNavigationBar: const CustomNavigationBar(),
         ),
-  );
+      );
 }
