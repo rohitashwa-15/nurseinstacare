@@ -9,7 +9,7 @@ class EnterVerificationView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        appBar: const CustomAppBar(title: ' '),
+        appBar: CustomAppBar(title: ' '),
         body: Padding(
           padding: Dimens.edgeInsets16,
           child: Column(

@@ -20,6 +20,7 @@ abstract class Routes {
   static const profileScreen = _Paths.profileScreen;
   static const changePasswordScreen = _Paths.changePasswordScreen;
   static const chatScreen = _Paths.chatScreen;
+  static const bookingID = _Paths.bookingID;
 }
 
 abstract class _Paths {
@@ -37,4 +38,5 @@ abstract class _Paths {
   static const profileScreen = '/profile-screen';
   static const changePasswordScreen = '/change-password-screen';
   static const chatScreen = '/chat-screen';
+  static const bookingID = '/bookingID-screen';
 }

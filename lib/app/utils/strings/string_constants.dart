@@ -66,4 +66,6 @@ abstract class StringConstants {
   static String confirm = 'confirm'.tr;
   static String chats = 'chats'.tr;
   static String save = 'save'.tr;
+  static String bookingID = 'bookingID'.tr;
+  static String pastReports = 'pastReports'.tr;
 }

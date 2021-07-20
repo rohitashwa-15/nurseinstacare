@@ -12,3 +12,4 @@ export 'enter_verification/enter_verification.dart';
 export 'profile/profile.dart';
 export 'change_password/change_password.dart';
 export 'chat_screen/chat_screen.dart';
+export 'booking_id/booking_id.dart';

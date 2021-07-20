@@ -12,14 +12,14 @@ part 'app_routes.dart';
 
 // coverage:ignore-file
 class AppPages {
-  static const initial = Routes.preferenceScreen;
+  static const initial = Routes.bookingID;
   static var transitionDuration = const Duration(
     milliseconds: 550,
   );
   static final pages = [
     GetPage<LoginView>(
       name: _Paths.loginScreen,
-      page: () =>  const LoginView(),
+      page: () => const LoginView(),
       transitionDuration: transitionDuration,
       binding: LoginBinding(),
       transition: Transition.native,
@@ -31,37 +31,37 @@ class AppPages {
       binding: ForgotPasswordBinding(),
       transition: Transition.fadeIn,
     ),
-      GetPage<ChangePasswordView>(
+    GetPage<ChangePasswordView>(
       name: _Paths.changePasswordScreen,
       transitionDuration: transitionDuration,
       page: () => const ChangePasswordView(),
       binding: ChangePasswordBinding(),
       transition: Transition.fadeIn,
     ),
-       GetPage<ProfileView>(
+    GetPage<ProfileView>(
       name: _Paths.profileScreen,
       transitionDuration: transitionDuration,
       page: () => const ProfileView(),
       binding: ProfileBinding(),
       transition: Transition.fadeIn,
     ),
-     GetPage<ChatsView>(
+    GetPage<ChatsView>(
       name: _Paths.chatScreen,
-      page: () =>  const ChatsView(),
+      page: () => const ChatsView(),
       transitionDuration: transitionDuration,
       binding: ChatsBinding(),
       transition: Transition.native,
     ),
-      GetPage<EditPhoneNoView>(
+    GetPage<EditPhoneNoView>(
       name: _Paths.editPhoneScreen,
-      page: () =>  EditPhoneNoView(),
+      page: () => EditPhoneNoView(),
       transitionDuration: transitionDuration,
       binding: EditPhoneNoBinding(),
       transition: Transition.fadeIn,
     ),
-       GetPage<EnterVerificationView>(
+    GetPage<EnterVerificationView>(
       name: _Paths.enterVerificationScreen,
-      page: () =>  const EnterVerificationView(),
+      page: () => const EnterVerificationView(),
       transitionDuration: transitionDuration,
       binding: EnterVerificationBinding(),
       transition: Transition.fadeIn,
@@ -87,7 +87,7 @@ class AppPages {
       binding: HelpBinding(),
       transition: Transition.fadeIn,
     ),
-   /* GetPage<FaqsView>(
+    /* GetPage<FaqsView>(
       name: _Paths.faqsScreen,
       transitionDuration: transitionDuration,
       page: () => FaqsView(),
@@ -113,6 +113,13 @@ class AppPages {
       transitionDuration: transitionDuration,
       page: () => const PatientsView(),
       binding: PatientsBinding(),
+      transition: Transition.fadeIn,
+    ),
+    GetPage<BookingIDView>(
+      name: _Paths.bookingID,
+      transitionDuration: transitionDuration,
+      page: () => BookingIDView(),
+      binding: BookingIDBinding(),
       transition: Transition.fadeIn,
     ),
   ];
