@@ -73,6 +73,7 @@ class TranslationsFile extends Translations {
           'save': 'SAVE',
           'bookingID': 'Booking Id',
           'pastReports' : 'PAST REPORTS',
+          'startJob' : 'START JOB',
         },
       };
 }

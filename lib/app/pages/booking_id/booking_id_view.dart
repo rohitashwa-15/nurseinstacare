@@ -125,7 +125,7 @@ class _BookingIDViewState extends State<BookingIDView>
         ),
         bottomNavigationBar: Padding(
           padding: Dimens.edgeInsets10,
-          child: const StartJobButton(),
+          child:  RightArrowButton(title: StringConstants.startJob,),
         ),
       );
 }

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import '../app.dart';
 
-class StartJobButton extends StatelessWidget {
-  const StartJobButton({
-    Key? key,
+class RightArrowButton extends StatelessWidget {
+  const RightArrowButton({
+    Key? key, required this.title,
   }) : super(key: key);
+  final String title;
   @override
   Widget build(BuildContext context) => GestureDetector(
         onTap: () {},
@@ -39,7 +40,7 @@ class StartJobButton extends StatelessWidget {
               Dimens.boxWidth20,
               Dimens.boxWidth20,
               Text(
-                'START JOB',
+                title,
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,

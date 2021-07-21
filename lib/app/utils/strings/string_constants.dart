@@ -68,4 +68,5 @@ abstract class StringConstants {
   static String save = 'save'.tr;
   static String bookingID = 'bookingID'.tr;
   static String pastReports = 'pastReports'.tr;
+  static String startJob = 'startJob'.tr;
 }

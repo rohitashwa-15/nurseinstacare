@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nurseinstacare/app/app.dart';
 import 'package:nurseinstacare/app/utils/strings/icon_constants.dart';
-import 'package:nurseinstacare/app/widgets/start_job_button.dart';
+import 'package:nurseinstacare/app/widgets/right_arrow_button.dart';
 
 class PastReport extends StatelessWidget {
   const PastReport({Key? key}) : super(key: key);
